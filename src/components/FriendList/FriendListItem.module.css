@@ -1,0 +1,42 @@
+.item {
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.3);
+    border: 1px solid #ccc;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 16px;
+    font-family: Rubik;
+    margin: 0 0 0 20px;
+}
+
+.avatar {
+    display: block;
+    width: 100%;
+    max-width: 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 20px;
+}
+
+.isOnline {
+    composes: status;
+    background: greenyellow;
+}
+
+.isOffline {
+    composes: status;
+    background: red;
+}

@@ -1,0 +1,71 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    border: 1px solid #ccc;
+    margin: 30px auto;
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.3);
+}
+
+.avatar {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 50%;
+    margin: 30px 0 0 0;
+}
+
+.name {
+    font-size: 16px;
+    font-family: Rubik;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+}
+
+.tag,
+.location {
+    font-size: 14px;
+    font-family: Rubik;
+    font-weight: 300;
+    color: gray;
+    margin: 10px 0 0 0;
+}
+
+.statsList {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.statsItem {
+    display: flex;
+    width: 33.333%;
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: center;
+    background: #e2e8ef;
+    border-top: 1px solid #ccc;
+}
+
+.statsItem:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.statsItemName {
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 12px;
+    color: gray;
+}
+
+.statsItemStat {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 5px 0 0;
+}
